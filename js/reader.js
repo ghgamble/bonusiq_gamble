@@ -10,7 +10,7 @@ export class Reader {
             self.readLines();   //what would be called once we press calc button
         }
     }
-    
+
     setSingle(){
         this.clearInputs();   //clear all inputs and outputs
         this.setListeners();   //inputs now calc on change
@@ -31,7 +31,7 @@ export class Reader {
     }
 
     setListeners() {
-        let self = this; //now self is pointer to itsself, mean class Reader
+        let self = this; //now self is pointer to itself, mean class Reader
         for (let i = 0; i < this.inputs.length; i++) {      //go through all iputs
             this.inputs[i].onchange = function () {   //and make them do calc every time we change value in them
                 self.readLine(i);  //i is for undestanding on which line to calc (i = 0-4)
