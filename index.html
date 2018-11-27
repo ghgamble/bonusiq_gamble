@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style/style.css" rel="stylesheet">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="node_modules/animate.css/animate.min.css" rel="stylesheet">
+
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/reader.js"></script>
+</head>
+<body>
+<div class="container-fluid" id="mainContainer">
+    <div class="row" id="topMargin"></div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4 text-center">
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-info btn-lg active" id="singleOption" onclick="changePane(true)">
+                            <input type="radio" name="options" autocomplete="off" checked> Single
+                        </label>
+                        <label class="btn btn-info btn-lg" id="multiOption" onclick="changePane(false)">
+                            <input type="radio" name="options" autocomplete="off"> Multi
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+            <div class="row" style="height: 100px"></div>
+            <div class="row" id="mainMenu">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <!--A-->
+                    <div class="row line">
+                        <div class="col-md-4 row">
+                            <div class="col-md-2"><h4><span class="badge badge-pill badge-info">A</span></h4></div>
+                            <div class="col-md-10 input-group">
+                                <input type="text"  class="form-control calcInputs">
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-right">
+                           X 25% =
+                        </div>
+                        <div class="col-md-4 input-group">
+                            <input type="text" class="form-control calcOutputs">
+                        </div>
+                    </div>
+                    <!--B-->
+                    <div class="row line">
+                        <div class="col-md-4 row">
+                            <div class="col-md-2"><h4><span class="badge badge-pill badge-info">B</span></h4></div>
+                            <div class="col-md-10 input-group">
+                                <input type="text"  class="form-control calcInputs">
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-right">
+                           X 25% =
+                        </div>
+                        <div class="col-md-4 input-group">
+                            <input type="text" class="form-control calcOutputs">
+                        </div>
+                    </div>
+                    <!--C-->
+                    <div class="row line">
+                        <div class="col-md-4 row">
+                            <div class="col-md-2"><h4><span class="badge badge-pill badge-info">C</span></h4></div>
+                            <div class="col-md-10 input-group">
+                                <input type="text"  class="form-control calcInputs">
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-right">
+                           X 25% =
+                        </div>
+                        <div class="col-md-4 input-group">
+                            <input type="text" class="form-control calcOutputs">
+                        </div>
+                    </div>
+                    <!--D-->
+                    <div class="row line">
+                        <div class="col-md-4 row">
+                            <div class="col-md-2"><h4><span class="badge badge-pill badge-info">D</span></h4></div>
+                            <div class="col-md-10 input-group">
+                                <input type="text"  class="form-control calcInputs">
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-right">
+                           X 25% =
+                        </div>
+                        <div class="col-md-4 input-group">
+                            <input type="text" class="form-control calcOutputs">
+                        </div>
+                    </div>
+                    <!--E-->
+                    <div class="row line">
+                        <div class="col-md-4 row">
+                            <div class="col-md-2"><h4><span class="badge badge-pill badge-info">E</span></h4></div>
+                            <div class="col-md-10 input-group">
+                                <input type="text"  class="form-control calcInputs">
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-right">
+                           X 25% =
+                        </div>
+                        <div class="col-md-4 input-group">
+                            <input type="text" class="form-control calcOutputs">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row line">
+                <div class="col-md-5"></div>
+                <div class="col-md-2 text-center">
+                    <input type="button" class="btn-lg btn-info" id="calcButton" value="CALCULATE ALL">
+                </div>
+                <div class="col-md-5"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
